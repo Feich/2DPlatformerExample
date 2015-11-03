@@ -7,5 +7,6 @@ An example of a 2D platformer made with Unity.
 Functionality that can currently be found:
 * A simple movement script, which DOES allow multiple consecutive jumps.
 * A simple player controller. Contains all the functionality of the simple movement script and fixes the issue of allowing multiple consecutive jumps through the use of a state machine. This allows for the player character to be in only one state at a time.
+* A State interface for use in the player character's state machine.
 * Level random generation, or to be more precise, faux random generation. Uses premade "blocks" to create a seamless, continuous level. This is done with the LevelGenerationController and ConnectionPointManager.
-
+* A CameraController that smoothly follows the player character around as the player character moves. Does not handle player's fast movement well (velocity of more than 50 approximately)
